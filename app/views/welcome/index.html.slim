@@ -1,0 +1,87 @@
+.fullWidth id="dianaonrails"
+	section id="homepage"
+		.large-12.columns
+			nav class="top-bar" role="navigation"
+				ul class="title-area"
+					li class="name"
+						h1 =link_to 'Diana On Rails',''
+				section class="top-bar-section"
+					ul class="right"
+						li =link_to 'About','/#about'
+						li =link_to 'Contacts','/#contacts'
+						li =link_to 'Blog',''		
+		.row
+			.large-6.columns
+			.large-6.columns style="margin-top:15px; float:right;"
+				h1 Hello!
+				h3 Thanks for dropping by. 
+				br
+				h4 I'm a girl, a software developer
+				h4 and a ruby on rails enthusiast.
+		
+
+
+	section id="about"
+		h1 KNOW MORE ABOUT ME...
+		hr
+		.row.about
+			.large-12.columns
+				p I am a young developer, problem solver who hopes make a change in peoples lifes.
+				p Having worked in a startup, a big consulting company and currenty in a small but a fun company.
+				
+		.row.education
+			h5.title Education
+			p I always liked computers and playing video games, so with 18 i went to the University of Lisbon study Computer Science, but i was not very fan of studying so i wanted to start work and learn on the job...
+		.row.work
+			h5.title Work Experience
+			p I started my professional career at the age of 23 in a startup with .Net. But I found my favorite, ruby on rails! So now i am discovery this awesome language, that doesn't give me headaches.
+		
+		.row.skills
+			.large-12.columns
+				h1 SKILLS
+				.item.large-3.columns
+					= easy_as_pie 60
+					span Ruby On rails
+				.item.large-3.columns	
+					= easy_as_pie 80
+					span HTML / CSS
+				.item.large-3.columns
+					= easy_as_pie 60 
+					span Javascript / JQuery
+				.item.large-3.columns
+					= easy_as_pie 80 
+					span Bootstrap
+				.item.large-3.columns
+					= easy_as_pie 60
+					span Git	
+				.item.large-3.columns
+					= easy_as_pie 60
+					span MySql
+				.item.large-3.columns
+					= easy_as_pie 30
+					span PHP
+				.item.large-3.columns
+					= easy_as_pie 50 
+					span .NET						
+	section id="contacts"
+		h1 GET IN TOUCH
+		hr
+		.row
+			.large-12.columns
+				div.description
+					h4 I’m always pleased to chat about work and meet new people in the industry. Send me a message using the form below.
+
+					h4 style="float:left;" Or find me here:
+					=link_to (image_tag('fi-social-linkedin.svg')),'https://www.linkedin.com/profile/view?id=211553168', :target => "_blank"
+				= form_tag(send_mail_path) do
+					div.large-6.columns style="padding-left:0;"
+	            		= label_tag 'name', 'Name'
+	                	= text_field_tag 'name', nil, class: 'form-control', placeholder: 'Your Name'
+	            	div.large-6.columns style="padding-right:0;"
+		                = label_tag 'email', 'Email'
+		                = email_field_tag 'email', nil, class: 'form-control', placeholder: 'Your Email Address'
+	            	div.large-12.columns style="padding-right:0; padding-left:0;"
+		               	= label_tag 'message', 'Write me your message'
+		               	= text_area_tag 'message', nil,rows: 4, placeholder: 'Message...'
+	            		= submit_tag nil, class:"tiny button btt-send"
+		        end   
