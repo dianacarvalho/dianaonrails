@@ -1,5 +1,5 @@
 development: 
-    host:dianaonrails-cape8g7pab.elasticbeanstalk.com
+    host: dianaonrails-cape8g7pab.elasticbeanstalk.com
     adapter: mysql2
     encoding: utf8
     reconnect: false
@@ -7,6 +7,7 @@ development:
     pool: 5
     username: root
     password: root
+    socket: /var/run/mysqld/mysqld.sock
 test:
   host:dianaonrails-cape8g7pab.elasticbeanstalk.com
   adapter: mysql2
@@ -16,6 +17,7 @@ test:
   pool: 5
   username: root
   password: root
+  socket: /var/run/mysqld/mysqld.sock
 
 production:
   host: dianaonrails-cape8g7pab.elasticbeanstalk.com
@@ -26,3 +28,4 @@ production:
   pool: 5
   username: root
   password: root
+  socket: /var/run/mysqld/mysqld.sock
