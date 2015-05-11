@@ -29,6 +29,7 @@ gem 'mail_form'
 gem 'easy_as_pie'
 gem 'mysql2'
 
+gem 'multi_json', '1.7.8'
 gem 'aws-sdk'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

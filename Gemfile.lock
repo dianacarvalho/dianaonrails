@@ -93,7 +93,7 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
-    multi_json (1.10.1)
+    multi_json (1.7.8)
     mysql2 (0.3.18)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
@@ -184,6 +184,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mail_form
+  multi_json (= 1.7.8)
   mysql2
   rails (= 4.2.0)
   sass-rails (~> 5.0)
