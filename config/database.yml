@@ -1,5 +1,5 @@
 development: 
-    host:dianaonrails-cape8g7pab.elasticbeanstalk.com 
+    host:dianaonrails-cape8g7pab.elasticbeanstalk.com
     adapter: mysql2
     encoding: utf8
     reconnect: false
@@ -8,7 +8,7 @@ development:
     username: root
     password: root
 test:
-  host:dianaonrails-cape8g7pab.elasticbeanstalk.com 
+  host:dianaonrails-cape8g7pab.elasticbeanstalk.com
   adapter: mysql2
   encoding: utf8
   reconnect: false
@@ -18,7 +18,7 @@ test:
   password: root
 
 production:
-  host: dianaonrails-cape8g7pab.elasticbeanstalk.com 
+  host: dianaonrails-cape8g7pab.elasticbeanstalk.com
   adapter: mysql2
   encoding: utf8
   reconnect: false
