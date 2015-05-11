@@ -4,11 +4,12 @@ development:
     encoding: utf8
     reconnect: false
     database: dianaonrailsdb
-    pool: 5
     port:3306
+    pool: 5
     username: dianaonrails
     password: dianaonrails
 test:
+  host: dianaonrailsdb.c1jujc6xlo5t.us-west-2.rds.amazonaws.com
   adapter: mysql2
   encoding: utf8
   reconnect: false
