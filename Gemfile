@@ -28,6 +28,8 @@ gem 'foundation-rails'
 gem 'mail_form'
 gem 'easy_as_pie'
 gem 'mysql2'
+
+gem 'aws-sdk'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
