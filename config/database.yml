@@ -23,7 +23,7 @@ production:
   encoding: utf8
   reconnect: false
   database: dianaonrailsdb
-  port:3306
+  port: 3306
   pool: 5
   username: dianaonrails
   password: dianaonrails
