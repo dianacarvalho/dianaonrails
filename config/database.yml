@@ -1,6 +1,4 @@
 development:
-    port: 3306
-    host: 127.0.0.1 
     adapter: mysql2
     encoding: utf8
     reconnect: false
@@ -20,7 +18,7 @@ test:
   password: root
 
 production:
-  host: 127.0.0.1
+  host: dianaonrailsdb.c1jujc6xlo5t.us-west-2.rds.amazonaws.com
   adapter: mysql2
   encoding: utf8
   reconnect: false
@@ -29,4 +27,3 @@ production:
   pool: 5
   username: dianaonrails
   password: dianaonrails
-  socket: /var/lib/mysql/mysql.sock
