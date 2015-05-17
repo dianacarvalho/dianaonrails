@@ -6,7 +6,7 @@ development:
   pool: 5
   username: root
   password: root
-  socket: /var/lib/mysql/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
 test:
   host: dianaonrailsdb.c1jujc6xlo5t.us-west-2.rds.amazonaws.com
   adapter: mysql2
