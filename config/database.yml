@@ -1,19 +1,10 @@
 development:
   adapter: mysql2
-  database: dianaonrailsdb
+  database: dianaonrails_development
   encoding: utf8
-  host: dianaonrails.cl9uyjaaates.eu-west-1.rds.amazonaws.com
-  username: dianaonrails
-  password: dianaonrails
+  username: root
+  password: root
   reconnect: true
-  port:3306
+  host: 127.0.0.1
+  port: 3306
 
-production:
-  adapter: mysql2
-  database: dianaonrailsdb
-  encoding: utf8
-  host: dianaonrails.cl9uyjaaates.eu-west-1.rds.amazonaws.com
-  username: dianaonrails
-  password: dianaonrails
-  reconnect: true
-  port:3306
