@@ -1,29 +1,19 @@
 development:
   adapter: mysql2
-  encoding: utf8
-  reconnect: false
   database: dianaonrailsdb
-  pool: 5
+  encoding: utf8
+  host: dianaonrails.cl9uyjaaates.eu-west-1.rds.amazonaws.com
   username: dianaonrails
   password: dianaonrails
-  host: 127.0.0.1
-test:
-  host: dianaonrailsdb.c1jujc6xlo5t.us-west-2.rds.amazonaws.com
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: dianaonrails_test
-  pool: 5
-  username: root
-  password: root
-  socket: /var/lib/mysql/mysql.sock
+  reconnect: true
+  port:3306
+
 production:
-  host: dianaonrailsdb.c1jujc6xlo5t.us-west-2.rds.amazonaws.com
   adapter: mysql2
-  encoding: utf8
-  reconnect: false
   database: dianaonrailsdb
-  port: 3306
+  encoding: utf8
+  host: dianaonrails.cl9uyjaaates.eu-west-1.rds.amazonaws.com
   username: dianaonrails
   password: dianaonrails
-  socket: /var/lib/mysql/mysql.sock
+  reconnect: true
+  port:3306
