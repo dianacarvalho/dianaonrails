@@ -4,7 +4,7 @@ development:
   username: root
   pool: 5
   timeout: 5000
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql2
@@ -12,6 +12,6 @@ production:
   username: root
   pool: 5
   timeout: 5000
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 
