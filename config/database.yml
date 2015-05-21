@@ -1,6 +1,6 @@
 development:
   adapter: mysql2
-  database: dianaonrails_development
+  database: dianaonrails_development1
   username: root
   password: root
   pool: 5
@@ -9,7 +9,7 @@ development:
 
 production:
   adapter: mysql2
-  database: dianaonrails_production
+  database: dianaonrails_production1
   username: root
   password: root
   pool: 5
