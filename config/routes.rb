@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: "welcome#index"
   match '/send_mail', to: 'welcome#send_mail', via: 'post'
+  resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
