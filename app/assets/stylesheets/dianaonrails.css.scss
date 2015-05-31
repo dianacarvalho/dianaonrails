@@ -2,7 +2,8 @@
 /*         HOMEPAGE			  */
 /******************************/
 $pink: #fc4349;
-$background:#EDECEC; 
+$background:#EDECEC;
+$black:#191f24;
 
 .fullWidth {
    width: 100%;
@@ -15,11 +16,27 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
+.fa-linkedin{
+	color:white;
+}
 
 #dianaonrails{
 	font-family: 'Raleway', sans-serif;
+	
 }
-
+.top-bar{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	li{
+		a{
+			font-family: 'Raleway', sans-serif;
+			font-size: 18px;
+			z-index: 1111;
+		}
+	}
+}
 #homepage{
 	height: 575px;
 	background-image: url("desk-opacity.png");
@@ -27,6 +44,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color:black;
+
 	.top-bar{
 		height: 2.8125rem;
 		line-height: 2.8125rem;
@@ -34,6 +52,7 @@ body{
 		margin-bottom: 0;
 		font-family: 'Raleway', sans-serif;
 		background-color: transparent;
+
 		a{
 			color:white;
 			font-family: 'Raleway', sans-serif;
@@ -49,13 +68,13 @@ body{
 		}
 	}
 	h1{
-		font-family: 'Muli', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
 		color:white;
 		font-weight: bold;
 		font-size: 2.3em;
 	}
 	h3{
-		font-family: 'Muli', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
 		color:white;
 	}
 	h4{
@@ -203,3 +222,15 @@ body{
 	}
 }
 
+/******************************/
+/*         BLOG				  */
+/******************************/
+#blog{
+	background-color: $background;
+	font-family: 'Raleway';
+	h1{
+		margin-top: 10%;
+		font-size: 40px;
+		text-align: center;
+	}
+}

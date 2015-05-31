@@ -1,18 +1,9 @@
 .fullWidth id="dianaonrails"
 	section id="homepage"
-		.large-12.columns
-			nav class="top-bar" role="navigation"
-				ul class="title-area"
-					li class="name"
-						h1 =link_to 'Diana On Rails',''
-				section class="top-bar-section"
-					ul class="right"
-						li =link_to 'About','/#about'
-						li =link_to 'Contacts','/#contacts'
-						li =link_to 'Blog',posts_path	
+		
 		.row
 			.large-5.columns
-			.large-7.columns style="margin-top:15px; float:right;"
+			.large-7.columns style="margin-top: 5%; float:right;"
 				h1 Hello!
 				h3 Thanks for dropping by. 
 				br
@@ -72,8 +63,6 @@
 				div.description
 					h4 I’m always pleased to chat about work and meet new people in the industry. Send me a message using the form below.
 
-					h4 style="float:left;" Or find me here:
-					=link_to (image_tag('fi-social-linkedin.svg')),'https://www.linkedin.com/profile/view?id=211553168', :target => "_blank"
 				= form_tag(send_mail_path) do
 					div.large-6.columns style="padding-left:0;"
 	            		= label_tag 'name', 'Name'

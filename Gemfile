@@ -33,6 +33,8 @@ gem 'multi_json', '1.7.8'
 gem 'aws-sdk'
 gem 'unicorn'
 gem 'passenger'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "font-awesome-rails"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
