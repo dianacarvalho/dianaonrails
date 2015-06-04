@@ -5,5 +5,11 @@
       ul
         - @post.errors.full_messages.each do |message|
           li = message
-
-  .actions = f.submit
+  =f.label :title
+  =f.text_field :title
+  =f.label :field
+  =f.text_field :field
+  =f.label :content
+  =f.text_area :content, :class => 'ckeditor'
+  =f.file_field :picture
+  = f.submit class:"tiny button btt-send"

@@ -2,12 +2,16 @@
 #
 # Table name: posts
 #
-#  id         :integer          not null, primary key
-#  title      :string(255)
-#  content    :text(65535)
-#  field      :string(255)
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id                   :integer          not null, primary key
+#  title                :string(255)
+#  content              :text(65535)
+#  field                :string(255)
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#  picture_file_name    :string(255)
+#  picture_content_type :string(255)
+#  picture_file_size    :integer
+#  picture_updated_at   :datetime
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

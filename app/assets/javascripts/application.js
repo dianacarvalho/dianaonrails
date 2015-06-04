@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require ckeditor-jquery
+//= require jquery.countdown
 //= require foundation
 //= require jquery.easy-pie-chart
 //= require_tree .
@@ -22,6 +24,10 @@ $(document).ready(function () {
 	$('.chart').easyPieChart({
         //your configuration goes here
     });
+    $('.ckeditor').ckeditor({
+	  // optional config
+	});
+	$("#count").countdown({until: new Date(2015, 05, 17)});
 
 });
 

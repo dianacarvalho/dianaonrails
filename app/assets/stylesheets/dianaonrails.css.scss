@@ -20,6 +20,12 @@ body{
 	color:white;
 }
 
+.button.tiny.btt-send{
+	background-color:$pink;
+	width:100px;
+	font-size: 14px;
+}
+
 #dianaonrails{
 	font-family: 'Raleway', sans-serif;
 	
@@ -29,11 +35,12 @@ body{
 	left: 0;
 	top: 0;
 	width: 100%;
+	z-index: 1111;
 	li{
 		a{
 			font-family: 'Raleway', sans-serif;
 			font-size: 18px;
-			z-index: 1111;
+			
 		}
 	}
 }
@@ -97,7 +104,7 @@ body{
 		text-align: center;
 		font-size: 1.8em;
 		color:$pink;
-		padding-top: 2%;
+		padding-top: 7%;
 	}
 
 	hr{
@@ -187,6 +194,8 @@ body{
 }
 
 #contacts{
+	padding-bottom: 7%;
+	padding-top: 4%;
 	h1{
 		font-family: 'Abel', sans-serif;
 		text-align: center;
@@ -215,22 +224,34 @@ body{
 			height: 3%;
 		}	
 	}
-	.btt-send{
-		background-color:$pink;
-		width:100px;
-		font-size: 1em;
-	}
+	
 }
 
 /******************************/
 /*         BLOG				  */
 /******************************/
-#blog{
+.blog{
 	background-color: $background;
-	font-family: 'Raleway';
+	.is-countdown{
+		border:none;
+		background-color:#f2f2f2;
+	}
 	h1{
 		margin-top: 10%;
-		font-size: 40px;
+		font-size: 45px;
 		text-align: center;
+		font-family: 'Abel', sans-serif;
+		color:$pink;
+		margin-top: 25%;
+	}
+}
+.post{
+	margin-top:3%;
+	padding: 3%;
+	background-color: white;
+	h1{
+		color:$pink;
+		font-size: 33px;
+		font-family: 'Abel', sans-serif;
 	}
 }
