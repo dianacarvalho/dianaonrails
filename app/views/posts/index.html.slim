@@ -1,5 +1,14 @@
-.fullWidth.blog
-	.large-6.columns.large-offset-3
- 		h1 It's going to be... 
- 		h1 wait for it....
- 		div id="count"
+.row.post
+	- for post in @posts 
+		.large-4.columns
+			.item 
+				= image_tag post.picture.url(:medium)
+				.content
+					h1.title = post.title
+					i class="fa fa-bookmark"  &nbsp;
+					span.field =post.field
+
+					p.description =post.description
+					p.date =post.created_at.strftime("%d %b %Y")
+
+ 		

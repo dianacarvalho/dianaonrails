@@ -27,7 +27,7 @@ $(document).ready(function () {
     $('.ckeditor').ckeditor({
 	  // optional config
 	});
-	$("#count").countdown({until: new Date(2015, 05, 17)});
+	$("#count").countdown({until: new Date(2015, 05, 21)});
 
 });
 

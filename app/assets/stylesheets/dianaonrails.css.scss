@@ -4,6 +4,7 @@
 $pink: #fc4349;
 $background:#EDECEC;
 $black:#191f24;
+$background-post:#F4F4F4;
 
 .fullWidth {
    width: 100%;
@@ -12,9 +13,14 @@ $black:#191f24;
    max-width: initial;
 }
 body{
-	background-color: #f2f2f2;
+	background-color: $background-post;
 	font-family: 'Raleway', sans-serif;
 }
+.top-text{
+	margin-top: 10%; 
+	float:right;
+}
+
 
 .fa-linkedin{
 	color:white;
@@ -45,7 +51,7 @@ body{
 	}
 }
 #homepage{
-	height: 575px;
+	height: 670px;
 	background-image: url("desk-opacity.png");
 	background-position: center;
 	background-size: cover;
@@ -231,7 +237,7 @@ body{
 /*         BLOG				  */
 /******************************/
 .blog{
-	background-color: $background;
+	background-color: $background-post;
 	.is-countdown{
 		border:none;
 		background-color:#f2f2f2;
@@ -246,12 +252,32 @@ body{
 	}
 }
 .post{
+	background-color: $background-post;
 	margin-top:3%;
-	padding: 3%;
-	background-color: white;
+	padding-top: 3%;
 	h1{
 		color:$pink;
 		font-size: 33px;
 		font-family: 'Abel', sans-serif;
+	}
+	.item{
+		background-color: white;
+		margin-bottom: 8%;
+		box-shadow: 5px 5px 12px #888;
+		.content{
+			padding: 5%;
+		}
+		img{
+			width: 100%;
+		}
+		.field{
+			font-size: 15px;
+		}
+		.description{
+			font-size: 12px;
+		}
+		.date{
+			font-size: 12px;
+		}
 	}
 }
