@@ -1,70 +1,79 @@
 .fullWidth id="dianaonrails"
 	section id="homepage"
+		
 		.row
-			.large-5.columns
-			.large-7.columns.top-text
-				h1 Hello!
-				h3 Thanks for dropping by. 
-				br
-				h4 I'm a young Front-End developer.
-				h4 Also a ruby on rails enthusiast.
+			.large-12.columns.top-text
+				
+				h1 Hello, I'm Diana
+				hr
+				h3 UX designer & Front-End developer.
+		.row		
+			.large-8.large-offset-2.columns.sentence
+				span I want to create 
+				span.bold Useful, 
+				br 
+				span.bold Delightful 
+				span and 
+				span.bold Beautiful 
+				span software.	
 	section id="about"
-		h1 KNOW MORE ABOUT ME...
+		h1 KNOW MORE ABOUT ME
 		hr
 		.row.about
-			.large-12.columns
-				p I am a girl and I enjoy making beautiful and awesome websites. And because nowadays it's necessary to make websites to work, not only for desktops but also for mobile phones and tablets, it became clear to me that front-end was something very important.
-				p So I want to specialize essencialy in CSS/HTML and Javascript (frameworks, like backbone or angular) also know more about UX/UI design.
-				p Recently I discovered Ruby on Rails, an amazing framework that makes programming a lot different from what I studied in college, so i am learning it.
-				p Sooo after having worked in a startup, a big consulting company and currenty in a small but fun company, I am trying to find out what is the best for me and what I am really passionate about...			
+			.large-8.large-offset-2.columns
+				=image_tag('skills.png')	
 		.row.education
-			h5.title Education
+			h3.title My Story so far...
+			p 
+			h5.sub-title Education
 			p I always liked computers and playing video games, so with 18 I went to the University of Lisbon to study Computer Science, but I was not very fond of studying so I wanted to start working and learning on the job...
-			h5.title Work Experience
+			h5.sub-title Work Experience
 			p I started my professional career at the age of 22, when I was hired by a startup company, to develop the website of the product they were launching.
 			p After that I went to a big consulting company to work in a bank. I realized it was not for me.
 			p So right now I am in a small company doing projects for the web and learning.
-		.row.skills
-			.large-12.columns
-				h1 SKILLS
-				.item.large-4.columns
-					= easy_as_pie 55
-					span Ruby On rails
-				.item.large-4.columns	
-					= easy_as_pie 70
-					span HTML / CSS
-				.item.large-4.columns
-					= easy_as_pie 50 
-					span Javascript / JQuery
-				.item.large-4.columns
-					= easy_as_pie 60 
-					span Bootstrap
-				.item.large-4.columns
-					= easy_as_pie 50
-					span Git	
-				.item.large-4.columns
-					= easy_as_pie 40
-					span MySql	
-				.item.large-4.columns
-					= easy_as_pie 45
-					span Sass					
+		.row.whatido
+			h3.title What I do...
+			.large-3.columns
+				.icon-item
+					.brainstorm
+						=image_tag("brainstorm-icon.png")
+					h4 Brainstorm
+			.large-3.columns		
+				.icon-item
+					.design
+						=image_tag("prototyping.jpg")
+					h4 Prototyping / Design
+			.large-3.columns
+				.icon-item
+					.usertest
+						=image_tag("user-test-icon.jpg")
+					h4 User Tests
+			.large-3.columns
+				.icon-item
+					.code
+						=image_tag("code-icon.jpg")
+					h4 Code		
 	section id="contacts"
 		h1 GET IN TOUCH
 		hr
 		.row
 			.large-12.columns
 				div.description
-					h4 I’m always pleased to chat about work and meet new people in the industry. Send me a message using the form below.
-
+					h4 I’m always pleased to chat about work and meet new people in the industry. 
+					h4 Send me a message using the form below.
+				div.success-message
+					=flash[:success]
 				= form_tag(send_mail_path) do
 					div.large-6.columns style="padding-left:0;"
-	            		= label_tag 'name', 'Name'
-	                	= text_field_tag 'name', nil, class: 'form-control', placeholder: 'Your Name'
+	            		= label_tag 'name', 'Name *'
+	                	= text_field_tag 'name', nil, class: 'form-control', placeholder: 'Your Name',required:true
 	            	div.large-6.columns style="padding-right:0;"
-		                = label_tag 'email', 'Email'
-		                = email_field_tag 'email', nil, class: 'form-control', placeholder: 'Your Email Address'
+		                = label_tag 'email', 'Email *'
+		                = email_field_tag 'email', nil, class: 'form-control', placeholder: 'Your Email Address',required:true
 	            	div.large-12.columns style="padding-right:0; padding-left:0;"
 		               	= label_tag 'message', 'Write me your message'
-		               	= text_area_tag 'message', nil,rows: 4, placeholder: 'Message...'
+		               	= text_area_tag 'message', nil,rows: 8, placeholder: 'Message...'
 	            		= submit_tag nil, class:"tiny button btt-send"
 		        end   
+			    //.large-2.columns
+			    	//i class="fa fa-location-arrow fa-3x"    

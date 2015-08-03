@@ -1,14 +1,13 @@
-.row.post
+.row.post.transitions-enabled.infinite-scroll.clearfix id="masonry-container"
 	- for post in @posts 
-		.large-4.columns
-			.item 
-				= image_tag post.picture.url(:medium)
-				.content
-					h1.title = post.title
-					i class="fa fa-bookmark"  &nbsp;
-					span.field =post.field
-
-					p.description =post.description
-					p.date =post.created_at.strftime("%d %b %Y")
+		.item.box.col3
+			= link_to (image_tag post.picture.url(:medium)), post_path(post.id)
+			.content
+				h1.title = post.title
+				p.description =post.description
+				i class="fa fa-tags"  &nbsp;
+				span.field =post.field 
+				
+				span.date =post.created_at.strftime("%d %b %Y")
 
  		
