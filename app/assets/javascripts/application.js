@@ -45,7 +45,7 @@ $(document).ready(function () {
 	$('#masonry-container').masonry({
 	  // options...
 	  itemSelector: '.box',
-	  columnWidth: 100,
+	  columnWidth: 80,
 	  isAnimated: !Modernizr.csstransitions
 	});
 });

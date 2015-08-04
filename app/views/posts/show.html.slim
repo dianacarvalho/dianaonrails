@@ -1,6 +1,6 @@
 .row.post
 	p#notice = notice
-	div.large-10.columns.large-offset-1
+	div.large-10.columns.large-offset-1.showitem
 		= image_tag @post.picture.url(:medium)
 		h1.title =@post.title
 		i class="fa fa-tags"  &nbsp;
@@ -8,7 +8,5 @@
 		br
 		.content
 			=raw(@post.content)
-		
-		= link_to 'Edit', edit_post_path(@post)
-		'|
-		= link_to 'Back', posts_path
+
+		= link_to '< Back', posts_path

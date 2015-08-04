@@ -49,7 +49,6 @@ body{
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 55px;
 	z-index: 1111;
 	background-color:$black;
 	
@@ -353,6 +352,15 @@ body{
 		.date{
 			font-size: 12px;
 			float:right;
+		}
+	}
+	.showitem{
+		margin-bottom: 5%;
+		img{
+			width: 100%;
+		}
+		.title{
+			margin-bottom: 1%;
 		}
 	}
 }
