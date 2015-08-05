@@ -43,23 +43,29 @@ body{
 }
 .top-bar-section li:not(.has-form) a:not(.button){
 	background:$black;
+	line-height: 3.5;
 }
 .top-bar{
 	position: fixed;
 	left: 0;
 	top: 0;
+	height: 60px;
 	width: 100%;
 	z-index: 1111;
 	background-color:$black;
-	
+	.name{
+		img{
+			width: 10%;
+		}
+	}
 	.top-bar-section ul{
 		
 		li{
 			
 			a{
 				font-family: 'Raleway', sans-serif;
-				font-size: 18px;
-				
+				font-size: 0.9em;
+				height: 60px;
 			}
 		}
 	}
