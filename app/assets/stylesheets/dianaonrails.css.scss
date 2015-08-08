@@ -1,7 +1,24 @@
-@media only screen and (min-width: 40.063em) { 
+@media all and (max-width : 992px) { 
 	
-	h1{
+	.main{
 		font-size: 1em;
+	}
+	div.name {
+		img{
+			width: 7%;
+		}
+	}
+	h3.title{
+		font-size: 1.8em;
+	}
+	div.icon-item{
+		
+		font-size: 1.3em;
+
+	}
+
+	[class*="column"] + [class*="column"]:last-child{
+		float:left;
 	}
 	
 } 
@@ -64,7 +81,7 @@ body{
 	background-color:$black;
 	.name{
 		img{
-			width: 10%;
+			width: 9%;
 			margin-left: 3%;
 		}
 	}
@@ -103,7 +120,7 @@ body{
 	background-color:black;
 	height: 680px;
 	
-	h1{
+	.main{
 		font-family: 'Josefin Sans', sans-serif;
 		color:$pink;
 		font-weight: 700;
@@ -111,10 +128,11 @@ body{
 		font-size: 4.5em;
 		margin-bottom: 0;
 	}
-	h3{
+	.sub{
 		font-family: 'Josefin Sans', sans-serif;
 		color:white;
 		margin-top:2%;
+		font-size: 1.5em;
 		text-align: center;
 	}
 	h4{
