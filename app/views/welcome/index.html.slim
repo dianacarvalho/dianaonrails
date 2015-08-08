@@ -19,38 +19,36 @@
 	section id="about"
 		h1 KNOW MORE ABOUT ME
 		hr
-		.row.about
-			.large-8.large-offset-2.columns
-				=image_tag('skills.png')	
 		.row.education
 			h3.title My Story so far...
-			p First I took Computer Science and graduated, after that I started to work as a programmer. After 3-4 years of programming, building software and learning several programming languages, I discover User Experience and love it! 
-			p So I started to read Don't make me think, witch made me want to change my career.
-			p For the past 3 months I have been studing and praticing UX design, and for the future I want to make a successful career on UX.
-			h5.sub-title Education
-			p I always liked computers and playing video games, so with 18 I went to the University of Lisbon to study Computer Science
-			h5.sub-title Work Experience
-			p I started my professional career at the age of 22, when I was hired by a startup company, to develop the website of the product they were launching.
-			p After that I went to a big consulting company to work in a bank. I realized it was not for me.
-			p So right now I am in a small company doing projects for the web and learning.
+			.small-12.large-12.columns
+				p I'm a 26 year old UX designer and front-end developer from Lisbon, Portugal. I graduated from University of Lisbon in Computer Science in 2012. 
+				p While in college I started working in a startup company as a software developer. Since then, I have been working as a web developer in a bank and an IT company.
+				p As time went by, I realized that I was a User Experience designer who also codes. I started to study it, to become an expert. Now I am looking for an opportunity to put my skills into action.
+		.row.about
+			h3.title My skills...
+			.large-8.large-offset-2.columns
+				=image_tag('skills.png')	
+		
+			
 		.row.whatido
 			h3.title What I do...
-			.large-3.columns
+			.small-10.small-offset-1.large-3.large-offset-0.columns
 				.icon-item
 					.brainstorm
 						=image_tag("brainstorm-icon.png")
 					h4 Brainstorm
-			.large-3.columns		
+			.small-10.small-offset-1.large-3.large-offset-0.columns		
 				.icon-item
 					.design
 						=image_tag("prototyping-icon.png")
 					h4 Prototyping / Design
-			.large-3.columns
+			.small-10.small-offset-1.large-3.large-offset-0.columns
 				.icon-item
 					.usertest
 						=image_tag("user-test-icon.png")
 					h4 User Tests
-			.large-3.columns
+			.small-10.small-offset-1.large-3.large-offset-0.columns
 				.icon-item
 					.code
 						=image_tag("code-icon.png")
@@ -66,10 +64,10 @@
 				div.success-message
 					=flash[:success]
 				= form_tag(send_mail_path) do
-					div.large-6.columns style="padding-left:0;"
+					div.small-12.large-6.columns style="padding-left:0;"
 	            		= label_tag 'name', 'Name *'
 	                	= text_field_tag 'name', nil, class: 'form-control', placeholder: 'Your Name',required:true
-	            	div.large-6.columns style="padding-right:0;"
+	            	div.small-12.large-6.columns style="padding-right:0;"
 		                = label_tag 'email', 'Email *'
 		                = email_field_tag 'email', nil, class: 'form-control', placeholder: 'Your Email Address',required:true
 	            	div.large-12.columns style="padding-right:0; padding-left:0;"

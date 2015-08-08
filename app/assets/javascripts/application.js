@@ -20,10 +20,11 @@
 //= require masonry/modernizr-transitions
 //= require jquery.easy-pie-chart
 //= require_tree .
-
 $(document).foundation();
 $(document).ready(function () {
-	var scroll_pos = 0;
+	
+    
+    var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 210) {

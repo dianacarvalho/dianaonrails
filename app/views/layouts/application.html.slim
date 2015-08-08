@@ -8,19 +8,26 @@ html
 	=stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Muli'
 	= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700'
 	= stylesheet_link_tag 'application', media: 'all'
-    
+
+    = favicon_link_tag 'favicon-32x32.png', rel:'icon',type:"image/png" 
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-  
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/js/foundation.min.js"
+  	= javascript_include_tag "vendor/modernizr"
 	= javascript_include_tag :application
 
 	= csrf_meta_tags
    
-   	nav class="top-bar" role="navigation"
+   	nav class="top-bar" data-topbar=''
 		ul class="title-area"
 			li class="name"
-				h1 =link_to image_tag('logo.png'),'/'
+				=link_to image_tag('logo.png'),'/'
+				li.toggle-topbar.menu-icon
+							a href="#"
+								span 	
 		section class="top-bar-section"
+			
 			ul class="right"
+
 				li =link_to 'About','/#about'
 				li =link_to 'Contacts','/#contacts'
 				li =link_to 'Writing',posts_path
