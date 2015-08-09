@@ -8,7 +8,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-  config.action_mailer.default_url_options = { host: 'dianaonrails-cape8g7pab.elasticbeanstalk.com' }
+  
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
@@ -16,7 +16,7 @@ Rails.application.configure do
     port:                 587,
     domain:               "gmail.com",
     user_name:            'd.r.carvalho89@gmail.com',
-    password:             '3j1B12Nw5f',
+    password:             '3j1B12Nw5di',
     authentication:       'plain',
     enable_starttls_auto: true  
   }
