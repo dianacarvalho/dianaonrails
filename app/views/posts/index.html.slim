@@ -1,10 +1,13 @@
 .row.post.transitions-enabled.infinite-scroll.clearfix id="masonry-container"
 	- for post in @posts 
-		.item.box.col3
-			= link_to (image_tag post.picture.url(:medium)), post_path(post.id)
+		
+		.item.box.col3 style="background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url(#{post.picture.url(:medium)});"
+			
 			.content
 				h1.title = post.title
 				p.description =post.description
+				=link_to 'view >', post_path(post.id)
+				br
 				i class="fa fa-tags"  &nbsp;
 				span.field =post.field 
 				

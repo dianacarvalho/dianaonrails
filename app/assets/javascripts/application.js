@@ -46,7 +46,8 @@ $(document).ready(function () {
 	$('#masonry-container').masonry({
 	  // options...
 	  itemSelector: '.box',
-	  columnWidth: 80,
+      columnWidth: 320,
+      gutterWidth: 2,
 	  isAnimated: !Modernizr.csstransitions
 	});
 });
