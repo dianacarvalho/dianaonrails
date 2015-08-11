@@ -354,12 +354,12 @@ body{
 	padding-top: 3%;
 	h1{
 		color:$pink;
-		font-size: 33px;
+		
 		font-family: 'Abel', sans-serif;
 	}
 	.title{
 		margin-top: 0;
-		text-shadow:1px 1px $black;
+		font-size: 4em;
 	}
 	.content{
 		margin-top: 4%;
@@ -370,31 +370,37 @@ body{
 		background-size: cover;
 		margin-bottom: 8%;
 		box-shadow: 2px 2px #e2e0e0;
-		
+		width:45%;
 		.content{
 			padding: 5%;
 			z-index: 9999;
 		}
-		a{
-			font-size: 1.3em;
-			margin-bottom: 3%;
+		.view-link{
+			margin-bottom: 1%;
+			a{
+				font-size: 1.5em;
+				
+			}
 		}
 		.field{
-			font-size: 15px;
+			font-size: 1.3em;
 			margin-right: 10%;
+			color:white;
 		}
 		.description{
 			font-size: 1.4em;
+			color:white;
 		}
 		.date{
 			font-size: 12px;
 			float:right;
+			color:white;
 		}
 	}
 	.showitem{
 		margin-bottom: 5%;
 		img{
-			width: 65%;
+			width: 55%;
 			float:right;
 			margin-left: 2%;
 		}
