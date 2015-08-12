@@ -1,20 +1,43 @@
 @media all and (max-width : 992px) { 
 	
-	.main{
-		font-size: 1em;
+	#homepage{ 
+		div.main{
+			font-size: 3em;
+		}
 	}
 	.name a img{		
 		width: 8%;
 
 	}
+	#about{ 
+		h1{
+			font-size: 1.3em;
+		}
+	}
+	label{
+		font-size: 1.3em;
+	}
+	input[type="text"]{
+		height: 46px;
+	}
+	.btt-send{
+		width: 100%;
+		font-size: 2em;
+	}
 
-	h3.title{
+	input[type="email"]{
+		height: 46px;
+	}
+
+	span{
+		font-size: 1em;
+	}
+	.title{
 		font-size: 1.8em;
 	}
 	div.icon-item{
 		
 		font-size: 1.3em;
-
 	}
 
 	[class*="column"] + [class*="column"]:last-child{
@@ -59,8 +82,8 @@ body{
 
 .button.tiny.btt-send{
 	background-color:$pink;
-	width:100px;
-	font-size: 14px;
+	
+	font-size: 1em;
 }
 
 #dianaonrails{
