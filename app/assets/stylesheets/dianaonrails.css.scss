@@ -261,7 +261,7 @@ body{
 		}
 	}
 	.circleBase {
-		border-radius: 50%;
+		//border-radius: 50%;
 		width: 15px;
 	    height: 15px;
 	    background: white;
@@ -401,6 +401,7 @@ body{
 		.view-link{
 			margin-bottom: 1%;
 			a{
+				color:#C44CDC;
 				font-size: 1.5em;
 				
 			}
@@ -409,6 +410,7 @@ body{
 			font-size: 1.3em;
 			margin-right: 10%;
 			color:white;
+			float:left;
 		}
 		.description{
 			font-size: 1.4em;
