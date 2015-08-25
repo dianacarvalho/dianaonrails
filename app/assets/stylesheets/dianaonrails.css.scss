@@ -367,7 +367,6 @@ body{
 		font-size: 45px;
 		text-align: center;
 		font-family: 'Abel', sans-serif;
-		color:$pink;
 		margin-top: 25%;
 	}
 }
@@ -376,7 +375,7 @@ body{
 	margin-top:3%;
 	padding-top: 3%;
 	h1{
-		color:$pink;
+		color:#E1545D;
 		
 		font-family: 'Abel', sans-serif;
 	}
@@ -391,7 +390,7 @@ body{
 	.item{
 		background-repeat: no-repeat;
 		background-size: cover;
-		margin-bottom: 8%;
+		margin-bottom: 3%;
 		box-shadow: 2px 2px #e2e0e0;
 		width:45%;
 		.content{
@@ -401,7 +400,7 @@ body{
 		.view-link{
 			margin-bottom: 1%;
 			a{
-				color:#5e3ac9;
+				color:#614244;
 				font-size: 1.5em;
 				
 			}
@@ -409,17 +408,17 @@ body{
 		.field{
 			font-size: 1.3em;
 			margin-right: 10%;
-			color:white;
+			color:#AE3C3A;
 			float:left;
 		}
 		.description{
 			font-size: 1.4em;
-			color:white;
+			color:black;
 		}
 		.date{
 			font-size: 12px;
 			float:right;
-			color:white;
+			color:#AE3C3A;
 		}
 	}
 	.showitem{

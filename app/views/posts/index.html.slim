@@ -1,8 +1,7 @@
 .row.post.transitions-enabled.infinite-scroll.clearfix id="masonry-container"
 	- for post in @posts 
 		
-		.item.box.col2 style="background-image: linear-gradient(rgba(018,018,018,0.4),rgba(018,018,018,0.4)),url(#{post.picture.url(:medium)});"
-			
+		.item.box.col2 
 			.content
 				h1.title = post.title
 				p.description =post.description
