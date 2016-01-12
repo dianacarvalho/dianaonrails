@@ -445,15 +445,15 @@ body{
 	}
 
 	.item{
-		border-radius:10px;
 		float:left;
 		margin-bottom: 3%;
-		background-color:white;
-		box-shadow: 2px 2px #e2e0e0;
 		
 		height: 315px;
 		.content{
 			padding: 5%;
+			border-radius:10px;
+			background-color:white;
+			box-shadow: 2px 2px #e2e0e0;
 		}
 		.view-link{
 			margin-bottom: 1%;
