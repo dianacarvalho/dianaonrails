@@ -21,38 +21,59 @@
 		hr
 		.row.education
 			h3.title My Story so far...
-			.small-12.large-12.columns
+			.small-6.large-6.columns
 				p I'm a 26 year old UX designer and front-end developer from Lisbon, Portugal. I graduated from the University of Lisbon in Computer Science, in 2012. 
 				p While in college I started working in a startup company as a software developer. Since then, I have been working as a web developer in a bank and an IT company.
-				p As time went by, I realized that I was a User Experience designer who also codes. I started to study it, to become an expert. Now I am looking for an opportunity to put my skills into action.
+				p As time went by, I got in touch with UX and I started to study it. I didn't put aside coding and I am studing AngularJS also as part of the Front-End development. I want to join both UX design and coding, be part of a team and contribute.
+				p I am now working as a freelancer, creating websites and putting my skills into action.
+
+			.large-6.columns.img-face
+				=image_tag('about-dianaux.png')		
 		.row.about
-			h3.title My skills...
-			.large-8.large-offset-2.columns
-				=image_tag('skills.png')	
-		
-			
+			h3.title More about what I know
+			.large-6.columns
+				h2 Coding
+				.large-8.large-offset-2.columns
+					div id="donut-coding"
+			.large-6.columns
+				h2 UX design
+				.large-8.large-offset-2.columns
+					div id="donut-ux"
+
+					 
+	section id="services"
+		h1 SERVICES
+		hr		
 		.row.whatido
-			h3.title What I do...
+			h3.title What can I do for you...
 			.small-8.small-offset-2.large-3.large-offset-0.columns
 				.icon-item
 					.brainstorm
 						=image_tag("brainstorm-icon.png")
-					h4 Brainstorm
+					h4 Brainstorm 
+					span.description
+						'( Business Requirements )
 			.small-8.small-offset-2.large-3.large-offset-0.columns		
 				.icon-item
 					.design
 						=image_tag("prototyping-icon.png")
 					h4 Prototyping / Design
+					span.description
+						'( Create guidelines and design )
 			.small-8.small-offset-2.large-3.large-offset-0.columns
 				.icon-item
 					.usertest
 						=image_tag("user-test-icon.png")
-					h4 User Tests
+					h4 User testing 
+					span.description 
+						'( Make sure that users understand and can navigate intuitively )
 			.small-8.small-offset-2.large-3.large-offset-0.columns.code-item
 				.icon-item
 					.code
 						=image_tag("code-icon.png")
-					h4 Code		
+					h4 Code 
+					span.description 
+						'( Give life to your website )
 	section id="contacts"
 		h1 GET IN TOUCH
 		hr

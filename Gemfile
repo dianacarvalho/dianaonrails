@@ -36,6 +36,10 @@ gem "font-awesome-rails"
 gem 'ckeditor_rails'
 gem 'jquery-countdown-rails'
 gem 'masonry-rails'
+
+gem 'snap_js-rails'
+gem 'morrisjs-rails'
+gem 'raphael-rails', '~> 2.1.2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

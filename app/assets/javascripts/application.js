@@ -19,10 +19,40 @@
 //= require masonry/jquery.infinitescroll.min
 //= require masonry/modernizr-transitions
 //= require jquery.easy-pie-chart
+//= require raphael
+//= require morris
 //= require_tree .
 
 $(document).ready(function () {
 	
+    Morris.Donut({
+      element: 'donut-coding',
+      resize: true,
+      colors: ['#FBB9B9','#F66C6A','#C35554','#C34643','#C97978','#B26C6C'],
+      data: [
+        {label: "HTML", value: 30},
+        {label: "CSS(SASS)",value: 30},
+        {label: "RubyOnRails", value: 20},
+        {label: "Javascript/AngularJS", value: 20},
+        {label: "GitLab",value:10},
+        {label: "Bootstrap",value:20}
+      ],
+      formatter: function (x) { return ''}
+    });
+    Morris.Donut({
+      element: 'donut-ux',
+      resize: true,
+      colors: ['#C34643','#C35554','#F66C6A','#FBB9B9'],
+      data: [
+        {label: "Photoshop", value: 30},
+        {label: "Illustrator", value: 30},
+        {label: "Axure", value: 20},
+        {label: "Prototyping",value:20}
+      ],
+      formatter: function (x) { return ''}
+    });
+
+    
     $(document).foundation();
     var scroll_pos = 0;
     $(document).scroll(function() { 

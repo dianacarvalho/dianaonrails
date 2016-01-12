@@ -111,6 +111,8 @@ GEM
     mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.5.1)
+    morrisjs-rails (0.5.1)
+      railties (> 3.1, < 5)
     multi_json (1.7.8)
     mysql2 (0.3.18)
     nokogiri (1.6.5)
@@ -153,6 +155,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.4.2)
+    raphael-rails (2.1.2)
     rdoc (4.2.0)
     sass (3.4.10)
     sass-rails (5.0.1)
@@ -173,6 +176,8 @@ GEM
       activesupport (>= 3.1, < 5.0)
       railties (>= 3.1, < 5.0)
       slim (~> 3.0)
+    snap_js-rails (1.9.2)
+      railties (>= 3.1)
     spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -218,6 +223,7 @@ DEPENDENCIES
   jquery-rails
   mail_form
   masonry-rails
+  morrisjs-rails
   multi_json (= 1.7.8)
   mysql2
   paperclip!
@@ -225,11 +231,16 @@ DEPENDENCIES
   pg
   rails (= 4.2.0)
   rails_12factor
+  raphael-rails (~> 2.1.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   slim-rails
+  snap_js-rails
   spring
   sqlite3
   uglifier (>= 1.3.0)
   unicorn
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.10.6

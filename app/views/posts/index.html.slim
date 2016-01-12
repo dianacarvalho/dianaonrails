@@ -1,18 +1,19 @@
-.row.post.transitions-enabled.infinite-scroll.clearfix id="masonry-container"
-	- for post in @posts 
-		
-		.item.box.col2 
-			.content
-				h1.title = post.title
-				p.description =post.description
-				.view-link 
-					=link_to 'view more >', post_path(post.id)
-				br
-				.field
-					i class="fa fa-tags"  &nbsp;
-					span =post.field 
-				.date
-					i class="fa fa-clock-o" &nbsp;
-					span =post.created_at.strftime("%d %b %Y")
+.container.main-container
+	.row.blog
+		- for post in @posts 
+			
+			.item.large-6.column 
+				.content
+					h1.title = post.title
+					p.description =post.description
+					.view-link 
+						=link_to 'view more >', post_path(post.id)
+					br
+					.field
+						i class="fa fa-tags"  &nbsp;
+						span =post.field 
+					.date
+						i class="fa fa-clock-o" &nbsp;
+						span =post.created_at.strftime("%d %b %Y")
 
  		
