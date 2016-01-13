@@ -33,7 +33,7 @@ $(document).ready(function () {
         {label: "HTML", value: 30},
         {label: "CSS(SASS)",value: 30},
         {label: "RubyOnRails", value: 20},
-        {label: "Javascript/AngularJS", value: 20},
+        {label: "Javascript/ReactJS", value: 20},
         {label: "GitLab",value:10},
         {label: "Bootstrap",value:20}
       ],
